@@ -1,0 +1,26 @@
+{
+  "name": "js-course",
+  "version": "1.0.0",
+  "description": "Learning nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "learn",
+    "entry",
+    "level"
+  ],
+  "author": "Elmer",
+  "license": "ISC",
+  "dependencies": {
+    "picocolors": "1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  },
+  "eslintConfig": {
+    "extends" : "standard"
+  }
+}
