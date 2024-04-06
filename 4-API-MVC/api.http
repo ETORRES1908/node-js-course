@@ -1,0 +1,34 @@
+### Recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+### Recuperar la pelicula por ID
+GET http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+
+### Recuperar todaas las peliculas por un género
+GET http://localhost:1234/movies?genre=Drama
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+
+  {
+    "title": 192.5,
+    "year": "pepito",
+    "director": 300,
+    "duration": 142,
+    "poster": "aaaa",
+    "genre": [
+      "Genre"
+    ],
+    "rate": "hola"
+  }
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+
+{
+  "year": 2000
+}
