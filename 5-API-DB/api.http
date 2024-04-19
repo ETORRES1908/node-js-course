@@ -1,0 +1,38 @@
+### Recuperar todas las peliculas
+GET http://localhost:1234/movies
+
+### Recuperar la pelicula por ID
+GET http://localhost:1234/movies/312b2470-fd15-11ee-ae01-04421aecdf5d
+
+### Recuperar todas las peliculas por un género
+GET http://localhost:1234/movies?genre=Drama
+
+### Crear una pelicula
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+
+  {
+    "title": "Test",
+    "year": 1999,
+    "director": "Test Director",
+    "duration": 142,
+    "poster": "https://google.com",
+    "genre": [
+      "Drama",
+      "Action"
+    ],
+    "rate": 4.5
+  }
+
+### Actualizar una pelicula
+PATCH http://localhost:1234/movies/c968cb61-fdce-11ee-8049-04421aecdf5d
+Content-Type: application/json
+
+{
+  "year": 2000
+}
+
+
+### Elimina una pelicula
+DELETE http://localhost:1234/movies/f9fdcdf3-fdcc-11ee-8049-04421aecdf5d
